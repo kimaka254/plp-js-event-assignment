@@ -26,13 +26,11 @@ Welcome to **Kimzie's Bakery** — a cozy, family-owned bakery website showcasin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/kimzies-bakery.git
-   cd kimzies-bakery
+   git clone https://github.com/kimaka254/plp-js-event-assignment.git
 
 2. 🖥️ How to View
 
 - Open `index.html` in your browser to view the site.
-- Make sure your images are stored in the `/images` folder with the correct filenames.
 
 ---
 
