@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kimzie's Bakery</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1><i class="fas fa-bread-slice"></i> Kimzie's Bakery</h1>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-text">
+            <h2>Freshly Baked, Daily Delivered!</h2>
+            <button id="specialOfferBtn"><i class="fas fa-gift"></i> See Special Offer</button>
+        </div>
+    </section>
+
+    <!-- TABS -->
+    <section id="tabs">
+        <button class="tab-button" data-tab="products">Products</button>
+        <button class="tab-button" data-tab="about">About</button>
+        <button class="tab-button" data-tab="contact">Contact</button>
+    </section>
+
+    <!-- PRODUCTS-->
+    <section id="products" class="tab-content">
+        <h2>Our Menu</h2>
+        <div id="gallery" class="gallery">
+            <img id="galleryImage" src="images/pexels-leticia-alvares-1805702-30391094.jpg" alt="Bakery Image" />
+            <button id="nextImageBtn" class="button">Next Image</button>
+        </div>
+    </section>
+
+    <!-- ABOUT-->
+    <section id="about" class="tab-content hidden">
+        <h2>About Kimzie's</h2>
+        <p>Welcome to Kimzie's — your cozy neighborhood bakery where love meets flour! We’re a passionate, family-owned
+            bakery dedicated to crafting handmade pastries, breads, and sweets that warm your heart.</p>
+        <p>From buttery croissants to fluffy cupcakes, every bite is made fresh daily with premium ingredients and a
+            sprinkle of care. Whether you’re stopping by for your morning treat or ordering for a special celebration,
+            we’ve got something delightful waiting for you.</p>
+        <p>At Kimzie's, it’s not just about baking — it’s about creating moments that make life sweeter.</p>
+        <img src="images/pexels-ana-sofia-bustamante-3271144-11374681.jpg" alt="bakery image" />
+        <blockquote>“Baked with love, served with joy.”</blockquote>
+    </section>
+
+    <!-- CONTACT-->
+    <section id="contact" class="tab-content hidden">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label>Name:<input type="text" id="name" required /></label>
+            <label>Email:<input type="email" id="email" required /></label>
+            <label>Password:<input type="password" id="password" required /></label>
+            <button type="submit" class="button">Submit</button>
+        </form>
+        <div id="passwordFeedback"></div>
+    </section>
+
+    <!-- FAQs-->
+    <section id="faq">
+        <h2>FAQs</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-question">🕖 What time do you open?</button>
+                <div class="accordion-answer">
+                    <p>We open at 7:00 AM every day!</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-question">🎂 Do you take custom orders?</button>
+                <div class="accordion-answer">
+                    <p>Yes! Call us or fill out the contact form and we’ll get back to you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section id="footer">
+        <p>&copy; 2025 Kimzie's Bakery. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>Follow us on social media for the latest updates!</p>
+    </section>
+
+    <!-- MODAL -->
+    <div id="modal" class="hidden">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <h3>Limited Time Offer!</h3>
+            <p>Buy 2 cupcakes, get 1 free!</p>
+        </div>
+
+        <div id="gift" class="hidden">
+            <h2>🎉 Congratulations! 🎉</h2>
+            <p>You’ve unlocked a special gift! Here's a 20% OFF coupon code: <strong>BAKERY20</strong></p>
+            <i class="fas fa-gift"></i>
+            <button id="closeGift">Close</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
